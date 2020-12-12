@@ -12,14 +12,14 @@ export const POSTS: Post[] = [
     id: 2,
     title: 'Mon deuxième post',
     content: 'blablabla',
-    loveIts:  5,
+    loveIts:  -3,
     createdAt: new Date()
   },
   {
     id: 3,
     title: 'Mon troisième post',
     content: 'blablabla',
-    loveIts:  5,
+    loveIts:  0,
     createdAt: new Date()
   },
 

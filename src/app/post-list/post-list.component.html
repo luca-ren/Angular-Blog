@@ -7,7 +7,8 @@
                 'list-group-item-danger': post.loveIts != undefined && post.loveIts < 0 }">
           <div class="card-stacked">
           <div class="card-content">
-            <h4>{{ post.title }}</h4>
+            <h4>{{ post.title }} </h4>
+            <p> {{post.createdAt | date | lowercase}} </p>
             <p><small>{{ post.content}}</small></p>
           </div>
           <button class="btn btn-success"
