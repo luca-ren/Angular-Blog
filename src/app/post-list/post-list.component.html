@@ -1,0 +1,21 @@
+<h1 class='center'>Posts</h1>
+<div class='container'>
+  <div class="row">
+    <div *ngFor='let post of posts' class="col s6 m4">
+      <li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': post.loveIts != undefined && post.loveIts > 0,
+                'list-group-item-danger': post.loveIts != undefined && post.loveIts < 0 }">
+          <div class="card-stacked">
+          <div class="card-content">
+            <h4>{{ post.title }}</h4>
+            <p><small>{{ post.content}}</small></p>
+          </div>
+          <button class="btn btn-success"
+                  (click)="likeIt(post)">love it!</button>
+          <button class="btn btn-danger"
+                  (click)="hateIt(post)">Hate it!</button>
+        </div>
+    </div>
+  </div>
+</div>
+
